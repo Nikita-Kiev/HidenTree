@@ -10,9 +10,7 @@ for(let i = 0; i < treeBranch.length; i++) {
 }
 
 tree.onclick = (event) => {
-  let target = event.target;
-  let hidenElement = target.parentNode.getElementsByTagName('ul')[0];
+  let hidenElement = event.target.parentNode.getElementsByTagName('ul')[0];
   if (!hidenElement) return;
-
   hidenElement.hidden = !hidenElement.hidden;
 }
